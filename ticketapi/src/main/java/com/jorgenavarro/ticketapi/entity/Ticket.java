@@ -28,4 +28,6 @@ public class Ticket {
     private int idUser;
     private Priority priority;
     private Category category;
+
+    
 }

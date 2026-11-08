@@ -1,8 +1,6 @@
 package com.jorgenavarro.ticketapi.entity;
 
-import com.jorgenavarro.ticketapi.entity.enumerators.Category;
 import com.jorgenavarro.ticketapi.entity.enumerators.Priority;
-import com.jorgenavarro.ticketapi.entity.enumerators.Status;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -24,10 +22,10 @@ public class Ticket {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int id;
     private int idAgent;
-    private Status status;
+    private int idStatus;
     private int idUser;
     private Priority priority;
-    private Category category;
+    private int idCategory;
 
     
 }

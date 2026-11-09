@@ -2,6 +2,8 @@ package com.jorgenavarro.ticketapi.services;
 
 import java.util.List;
 
+import org.springframework.kafka.annotation.KafkaListener;
+
 import com.jorgenavarro.ticketapi.entity.Ticket;
 
 /**
@@ -35,6 +37,5 @@ public interface InterfaceTicketRepository {
      * @return Ticket - the ticket with the id requested
      */
     public Ticket find(int id);
-
     
 }
